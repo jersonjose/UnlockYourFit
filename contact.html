@@ -43,34 +43,27 @@
       </div>
     </nav>
 
-    <!-- Hero Section-->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>UNLOCK YOUR BEST SELF</h1>
-          <h2>Build the body you deserve.</h2>
-          <button>Read More</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featured Section-->
-    <div class="featured">
-      <h1>Featured Articles</h1>
-      <div class="featured__container">
-        <div class="featured__card">
-          <a href="/articles.html">
-          <h2>Home Workouts Without Equipment</h2>
-          <button>Read More</button>
-          </a>
-        </div>
-        <div class="featured__card">
-          <h2>Resistance Band Training</h2>
-          <button>Read More</button>
-        </div>
-        <div class="featured__card">
-          <h2>The Best Exercises for Muscle Growth</h2>
-          <button>Read More</button>
+    <!-- Contact Section -->
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <h2>Fill out the form below.</h2>
+      <div class="contact__container">
+        <div class="contact__items">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message or Offer"
+              required
+            ></textarea>
+            <button class="cta" type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>

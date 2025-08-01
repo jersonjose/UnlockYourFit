@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock Your Fit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><img
+            class="web__logo"
+            src="/images/website_logo.png"
+            alt="dumbbell"
+          />UNLOCK YOUR FIT</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/articles.html" class="navbar__links">Articles</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tools.html" class="navbar__links">Tools</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Tools Section -->
+    <div class="tools">
+      <h1>Tools</h1>
+      <div class="tools__container">
+        <div class="tools__calculator">
+          <div class="tabs">
+            <button class="tab-button active">Body Mass Index (BMI)</button>
+          </div>
+          <div class="form-content">
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" value="" />
+            </div>
+            <div class="form-group">
+              <label>Gender:</label>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male"> Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female"> Female</label>
+            </div>
+            <div class="form-group">
+              <label for="height">Height:</label>
+              <input type="number" id="height" value="" />
+              <span>cm</span>
+            </div>
+            <div class="form-group">
+              <label for="weight">Weight:</label>
+              <input type="number" id="weight" />
+              <span>kg</span>
+            </div>
+            <div class="buttons">
+              <button class="calculate-button" onclick="check();">
+                Calculate
+              </button>
+              <button class="clear-button">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="tools__result">
+          <h2>Results:</h2>
+          <div class="results__container">
+            <p class="text">Your BMI is:</p>
+            <div id="result">00.00 kg/m<sup>2</sup></div>
+          </div>
+          <div class="results__container">
+            <p class="comment"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bmr">
+      <div class="bmr__container">
+        <div class="bmr__calculator">
+          <div class="tabs">
+            <button class="tab-button active">Basal Metabolic Rate (BMR)</button>
+          </div>
+          <div class="form-content">
+            <div class="form-group">
+              <label for="age-bmr">Age:</label>
+              <input type="number" id="age-bmr" value="" />
+            </div>
+            <div class="form-group">
+              <label>Gender:</label>
+              <input type="radio" id="male-bmr" name="gender" value="male" />
+              <label for="male-bmr"> Male</label>
+              <input type="radio" id="female-bmr" name="gender" value="female" />
+              <label for="female-bmr"> Female</label>
+            </div>
+            <div class="form-group">
+              <label for="height-bmr">Height:</label>
+              <input type="number" id="height-bmr" value="" />
+              <span>cm</span>
+            </div>
+            <div class="form-group">
+              <label for="weight-bmr">Weight:</label>
+              <input type="number" id="weight-bmr" />
+              <span>kg</span>
+            </div>
+            <div class="buttons">
+              <button class="calculate-button-bmr" onclick="checkBmr();">
+                Calculate
+              </button>
+              <button class="clear-button-bmr">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="bmr__result">
+          <h2>Results:</h2>
+          <div class="results__bmr">
+            <p class="bmr-text">Your BMR is:</p>
+            <div id="bmr-result">0 Calories/day</div>
+          </div>
+          <!-- <div class="results__bmr">
+            <p class="comment-bmr"></p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <h1>© 2025 UnlockYourFit.com | Domain for sale by owner.</h1>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
