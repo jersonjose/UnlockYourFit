@@ -181,7 +181,7 @@
 
 /* Articles Section */
 
-.main__articles {
+/* .main__articles {
     padding: 50px 0;
     width: 100%;
     height: auto;
@@ -189,25 +189,161 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #f4f4f4;
-    /* background-color: #f4f4f4; */
-}
+} */
 
-.main__articles h1 {
+/* .main__articles h1 {
     margin: 10px auto;
     color: #a67c00;
     font-size: 2rem;
     justify-self: center;
     align-items: center;
     text-align: center;
-}
+} */
 
-.articles__content {
+/* .articles__content {
     height: auto;
     padding: 30px 50px;
     text-align: justify;
+} */
+
+/* .articles__content h2 {
+    margin: 10px auto;
+    color: #a67c00;
+    font-size: 1.8rem;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .articles__content p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+} */
+
+/* .articles__content h3 {
+    margin: 15px auto;
+    color: #a67c00;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .articles__content h4 {
+    margin: 15px auto;
+    color: #a67c00;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .articles__content h5 {
+    margin: 15px auto;
+    color: #a67c00;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .articles__content ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* .articles__content li {
+  margin: 10px 20px;
+  padding: auto 10px;
+  text-align: justify;
+} */
+
+/* .articles__content dt {
+  margin: 0 20px;
+  text-align: justify;
+} */
+
+/* .articles__content dd {
+  margin: 0 40px;
+  text-align: justify;
+} */
+
+body {
+    background-image: url(images/pic5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.articles__content h2 {
+header {
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+header nav h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header nav .tabs {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .tabs .tab {
+    display: block;
+}
+
+header nav .tabs .tab a[data-switcher] {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #023e8a;
+    cursor: pointer;
+}
+
+header nav .tabs .tab:hover a[data-switcher] {
+    background-color: #a67c00;
+}
+
+header nav .tabs .tab.is-active a[data-switcher] {
+    background-color: #a67c00;
+    font-weight: 700;
+}
+
+main {
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+.pages {
+    margin-top: 100px;
+    padding: 50px 30px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+.pages h2, h3, h4, h5, h6 {
     margin: 10px auto;
     color: #a67c00;
     font-size: 1.8rem;
@@ -216,64 +352,37 @@
     text-align: center;
 }
 
-.articles__content p {
-    margin-bottom: 10px;
+.pages p {
+    margin-bottom: 30px;
     font-size: 1rem;
 }
 
-.articles__content h3 {
-    margin: 15px auto;
-    color: #a67c00;
-    font-size: 1.5rem;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-}
-
-.articles__content h4 {
-    margin: 15px auto;
-    color: #a67c00;
-    font-size: 1.5rem;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-}
-
-.articles__content h5 {
-    margin: 15px auto;
-    color: #a67c00;
-    font-size: 1.5rem;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-}
-
-.articles__content ol {
+.pages ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.articles__content li {
+.pages li {
   margin: 10px 20px;
   padding: auto 10px;
   text-align: justify;
 }
 
-.articles__content dt {
+.pages dt {
   margin: 0 20px;
   text-align: justify;
 }
 
-.articles__content dd {
-  margin: 0 40px;
+.pages dd {
+  margin: 0 50px;
   text-align: justify;
 }
+
 
 /* Footer Section */
 
 .footer {
   background-color: #3a3a3a;
-  position: relative;
   align-content: center;
   justify-items: center;
   width: 100%;
