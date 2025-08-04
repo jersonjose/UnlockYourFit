@@ -363,7 +363,7 @@ main {
 }
 
 .pages li {
-  margin: 10px 20px;
+  margin: 10px 25px;
   padding: auto 10px;
   text-align: justify;
 }
@@ -406,3 +406,4 @@ main {
     font-size: 0.7rem;
   }
 }
+
